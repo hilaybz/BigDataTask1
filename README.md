@@ -29,9 +29,14 @@ Added as Q2.py
 
 Exercise 3
 Q1. Is your change in the mapper or in the reducer?
+The change is in the recuder as it sums the words and only then knows which are the top 3
+
+
 Q2. Please submit your code in GitHub
 ______________________________
 Q3. Print the output of the MapReduce and add to the project.
+Uploaded screenshot.
+
 Note: you should not use external pipes, sort, or filters. All should be done inside the mapReduce Python code
 I want to see in the screenshot that includes the command you typed:
 $ > hadoop fs -ls /user/hduser/gutenberg-output
