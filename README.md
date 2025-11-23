@@ -4,37 +4,55 @@ Please answer the questions below
 
 
 Exercise 1
+-------------------------------------
+
 Q1. How many files are there?
+
 6 Data files and 1 Success file
-
+_____________________________________
 Q2. Did number of mapper change?
+
 No - we got 9 launched map tasks in both runs
-
+_____________________________________
 Q3. Did number of reducer changed?
+
 Yes - it has changed from 3 launched reduce tasks in the first run to 6 in the second run
-
+_____________________________________
 Q4. Did number of output files change? Why?
-Yes - Because hadoop creates one output file for each reducer, since the number of reducers changed, the number of output files changed as well. 
 
+Yes - Because hadoop creates one output file for each reducer, since the number of reducers changed, the number of output files changed as well. 
+_____________________________________
 Q5. What does the value of 'Merged Map outputs' represents and how is it calculated?
 
+The Merged Map outputs represents the number intermediate map-output partitions that were merged together before being sent to reducer.
+The mapper splits its results into several output files, each destined for a different reducer. It is calculated as the number of mappers times the number of reducers. 
 
 
+______________________________________
 Exercise 2
+--------------------------------------
 Q1. Is your change in the mapper or in the reducer?
+
 The change is in the mapper because the reducer needs to get the words stripped from dots commas and make it case sensitive before it sums them up.
-
+______________________________________
 Q2. Please submit your code in GitHub
+
 Added as Q2.py
-
+______________________________________
 Exercise 3
+--------------------------------------
 Q1. Is your change in the mapper or in the reducer?
-The change is in the recuder as it sums the words and only then knows which are the top 3
 
+The change is in the recuder as it sums the words and only then knows which are the top 3
+_______________________________________
 
 Q2. Please submit your code in GitHub
-______________________________
+
+Added as Q3.py
+_______________________________________
+
 Q3. Print the output of the MapReduce and add to the project.
+
 Uploaded screenshot.
 
 Note: you should not use external pipes, sort, or filters. All should be done inside the mapReduce Python code
